@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+tmp/
+audit/extracted_text/
+audit/corpus_unique/
+audit/evidence/inventory.csv
+audit/evidence/duplicates.json
+audit/evidence/duplicate_units.json
+audit/evidence/extraction_errors.json
+audit/evidence/line_audit.jsonl
+

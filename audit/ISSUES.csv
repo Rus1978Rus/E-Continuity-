@@ -1,0 +1,18 @@
+issue_id,priority,area,title,status,acceptance_criterion
+AR-001,P1,repository,Многократное вложенное дублирование,open,Canonical source set и автоматическая сборка без ручных ZIP-копий
+AR-002,P1,versioning,Суффиксы копий подменяют версионность,open,SemVer плюс document UID плюс SHA-256
+AR-003,P0,release,Рассинхрон E-Continuity и Template E,open,Проверенный rename-only diff v2.3.1
+AR-004,P1,architecture,Патч v2.3 не интегрирован в основной текст,open,Один canonical source и changelog
+AR-006,P0,legal,Публичный репозиторий конфликтует с private/no-transfer,open,Явная LICENSE/publication policy
+M-001,P0,method,Формула не задаёт модель решения,open,Gate-логика шкалы unknown и формальный output
+M-002,P0,metrics,ETIG и метрики не операционализированы,open,Data dictionary единицы калибровка пример inter-rater test
+M-003,P0,metrics,MVW смешивает duration и evidence level,open,Раздельные MVW_duration и MVW_evidence_level
+M-004,P0,method,Не определена единица анализа,open,Обязательная assessment boundary schema
+M-005,P0,validation,Нет протокола воспроизводимости,open,Два независимых аудитора и метрика согласия
+M-006,P1,evidence,Зрелость кейса без claim-level traceability,open,Claim-source matrix с точными локаторами
+M-007,P1,research,Selection и confirmation bias,open,Case selection protocol и disconfirming cases
+M-008,P1,method,Не проверена переносимость между доменами,open,Transfer test и falsifiers по домену
+M-009,P1,governance,Нормативные правила без owner/trigger/evidence,open,Rule registry с owner trigger artifact interval exceptions
+M-010,P1,review,Review не равен validation,open,Независимые reviewers и disposition log
+M-011,P2,terminology,Русско-английский терминологический дрейф,open,Controlled bilingual vocabulary
+
