@@ -60,3 +60,48 @@ _References RU / рабочий список источников_
 | NASA NTRS - Space aging of solid rocket materials | https://ntrs.nasa.gov/citations/19920017842 |
 | NASA NTRS - Wear and Tear / Mechanical aging | https://ntrs.nasa.gov/api/citations/20090005236/downloads/20090005236.pdf |
 | NIST - preserving Apollo F-1 components recovered from the ocean | https://www.nist.gov/preserving-past/ships-and-space/how-metallurgists-saved-apollo-rockets-languished-ocean-decades |
+
+---
+
+# Standards & Adjacent Fields Addendum
+
+## Назначение
+
+Мэппинг E-Continuity на смежные стандарты и дисциплины. Значительная часть блоков framework уже покрывается существующими полями, и это должно быть заявлено явно — до того, как это заявит reviewer. Позиционирование: E-Continuity — umbrella-словарь над перечисленными полями; новизна — не отдельные компоненты, а их интеграция в один словарь, негативные анти-overclaim правила (MVW-1/2 не дают dynamic claim, STATUS != EVIDENCE) и включение capability-слоя в единую модель вместе с object/digital preservation.
+
+## Obsolescence / DMSMS management
+
+Покрывает: Managed Sunset, Dependency Registry, классы S0-S5.
+
+| Source | URL |
+| --- | --- |
+| IEC 62402:2019 Obsolescence management | https://webstore.iec.ch/en/publication/60125 |
+| SD-22 DMSMS Management Guidebook (US DoD Defense Standardization Program) | https://www.dsp.dla.mil/Programs/DMSMS/ |
+
+## Business continuity / risk management
+
+Покрывает: custody chain, handover lock, institutional recovery, mission recovery.
+
+| Source | URL |
+| --- | --- |
+| ISO 22301:2019 Security and resilience - Business continuity management systems | https://www.iso.org/standard/75106.html |
+| ISO 31000:2018 Risk management - Guidelines | https://www.iso.org/standard/65694.html |
+
+## Knowledge retention / nuclear knowledge management
+
+Покрывает: Capability Layer, Skill Extinction Risk, tacit knowledge capture, succession planning.
+
+| Source | URL |
+| --- | --- |
+| IAEA Nuclear Knowledge Management programme | https://www.iaea.org/topics/nuclear-knowledge-management |
+| IAEA - Risk Management of Knowledge Loss in Nuclear Industry Organizations | https://www.iaea.org/publications/7386/risk-management-of-knowledge-loss-in-nuclear-industry-organizations |
+
+## Digital preservation maturity models
+
+Дополняют уже включённые OAIS/DPC Handbook: уровневые модели оценки зрелости хранения.
+
+| Source | URL |
+| --- | --- |
+| NDSA Levels of Digital Preservation | https://ndsa.org/publications/levels-of-digital-preservation/ |
+| DPC Rapid Assessment Model (RAM) | https://www.dpconline.org/digipres/dpc-ram |
+| CoreTrustSeal Trustworthy Data Repositories Requirements | https://www.coretrustseal.org/why-certification/requirements/ |

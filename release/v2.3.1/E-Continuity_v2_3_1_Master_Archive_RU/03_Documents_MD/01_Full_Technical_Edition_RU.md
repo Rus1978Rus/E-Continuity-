@@ -52,22 +52,18 @@ Template E v2.3 is an engineering framework for governed recovery of mission thr
 
 ## 3. Core Formula
 
+Каноническая формула v2.3 — компактная 5-блочная формула (см. раздел 0.1):
+
 ```
-Mature E-system v2.3 =
-Object
-+ Metadata
-+ Recovery Protocol
-+ Proof Testing
-+ Custody Governance
-+ Migration Governance
-+ Operator Renewal
-+ Risk Register
-+ Mission Review
-+ Institutional Recovery
-+ Capability Registry
-+ Managed Sunset Protocol
-+ Skill Extinction Dashboard
+Mature E-system =
+Technical Recoverability
++ Verification Layer
++ Custody & Successor Governance
++ Migration & Sunset Governance
++ Capability Continuity
 ```
+
+Историческая расширенная формула из 13 компонентов перенесена в Appendix A. Она сохраняется как reference-слой для SOP-ссылок и не является канонической формой ядра.
 
 ## 4. Mission-Centric Model
 
@@ -621,3 +617,37 @@ Version 2.3 reduces the core formula from an expanded 13-component list to five 
 ## 12. Итог
 
 Template E v2.3 делает framework компактнее, понятнее reviewer-у, честнее по case maturity, сильнее по proof testing и ближе к инженерному инструменту.
+
+---
+
+# Appendix A — Expanded Core Formula (13 компонентов, до v2.3)
+
+Расширенная формула сохранена как исторический reference-слой для SOP-ссылок. Канонической формой ядра v2.3 является компактная 5-блочная формула (разделы 0.1 и 3).
+
+```
+Mature E-system (expanded, historical) =
+Object
++ Metadata
++ Recovery Protocol
++ Proof Testing
++ Custody Governance
++ Migration Governance
++ Operator Renewal
++ Risk Register
++ Mission Review
++ Institutional Recovery
++ Capability Registry
++ Managed Sunset Protocol
++ Skill Extinction Dashboard
+```
+
+## Мэппинг на компактные блоки v2.3
+
+| Блок v2.3 | Компоненты расширенной формулы |
+| --- | --- |
+| Technical Recoverability | Object + Metadata + Recovery Protocol |
+| Verification Layer | Proof Testing |
+| Custody & Successor Governance | Custody Governance + Institutional Recovery |
+| Migration & Sunset Governance | Migration Governance + Managed Sunset Protocol |
+| Capability Continuity | Operator Renewal + Capability Registry + Skill Extinction Dashboard |
+| Сквозные governance-процессы | Risk Register + Mission Review |
