@@ -1,0 +1,48 @@
+CONVEYOR_AND_REVIEW_LOG_RU
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Created: 2026-06-05T19:26:06+00:00
+Status: COLLECTION_LOG / NOT_COMPLETE_EXTERNAL_AUDIT
+
+Purpose:
+Собрать известные материалы review (рецензии), conveyor (конвейерных прогонов),
+feedback (обратной связи) и reviewer packages (пакетов для рецензента).
+
+Known physical review/reviewer materials found:
+- 07_appendix_external_reviews_v1.0.pdf
+- 07_appendix_external_reviews_v1.0(1).pdf
+- Template_E_Reviewer_Edition variants
+- Template_E_v2_1_Reviewer_Package_RU
+- Template_E_v2_2_Reviewer_Package_RU
+- Template_E_v2_3_Reviewer_Package_RU
+- Template_E_v2_3_Reviewer_Package_RU_ALL PDF
+- Reviewer package PDF-only archives where found
+
+Known dialogue-provided review/feedback:
+- DeepSeek-style review of the package "Свод правил пережидания".
+  Status: CHAT_PROVIDED_TEXT / NOT_PHYSICAL_EXTERNAL_FILE_VERIFIED.
+  Main points: five conditions useful, document 06 has standalone value,
+  proof testing is strong, need layers of interpretability, negative set,
+  ETIG, partial redundancy, separate operational biobank SOP.
+
+- Later reviewer-style evaluation of Template E v2.3/v2.2:
+  Status: CHAT_PROVIDED_TEXT / NOT_PHYSICAL_EXTERNAL_FILE_VERIFIED.
+  Main points: v2.2 strengthened by Dynamic Proof Testing and CASE-SPACE-001;
+  weak areas: metrics not operational enough, core formula overloaded,
+  CASE-SPACE needs primary source, Biobank SOP generic.
+  Resulting patch: v2.3 Stabilization Patch.
+
+Important limitation:
+This log does not claim every review came from an independently verified external reviewer file.
+Where source is not a physical file, it must be treated as CHAT_TRANSCRIPT_EXTRACT / user-provided text.
+
+Recommended future action:
+For each external review, create:
+- REVIEW_ID
+- reviewer identity/type
+- date
+- source file
+- hash
+- target document version
+- verdict
+- required patches
+- integration status

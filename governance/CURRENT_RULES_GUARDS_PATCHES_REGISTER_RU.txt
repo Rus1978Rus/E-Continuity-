@@ -1,0 +1,88 @@
+CURRENT_RULES_GUARDS_PATCHES_REGISTER_RU
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Created: 2026-06-05T19:26:06+00:00
+Status: ACTIVE_WORKING_REGISTER / HUMAN_READABLE
+
+1. PROJECT_NAME_LOCK
+- Active name: E-Continuity / Фреймворк управляемой восстановимости.
+- Former/internal name: Template E.
+- Use Template E only as historical/former name.
+
+2. OLD_FOLDER_RULE_v1.0
+- Папка «старое» / OLD_DO_NOT_EDIT = frozen fallback storage (замороженная страховочная зона).
+- Можно добавлять устаревшие или страховые копии.
+- Нельзя редактировать внутри.
+- Если файл нужен — копировать в рабочую папку и работать с копией.
+
+3. PRIVATE AUTHOR PROJECT / COMMERCIAL USE PROHIBITED
+- Все материалы являются частью частного авторского проекта Руслана Малявского.
+- Использование разрешено только для помощи автору: analysis (анализ), critique (критика),
+  structuring (структурирование), documentation (документация), testing (тестирование), PoC preparation (подготовка PoC).
+- Commercial use (коммерческое использование), sale (продажа), patenting (патентование),
+  model training (обучение моделей), transfer to third parties (передача третьим лицам),
+  productization (продуктизация), commercial derivatives (коммерческие производные решения)
+  without written permission are prohibited (запрещены без письменного разрешения).
+
+4. PROJECT_WIDE_DOCUMENT_PROVENANCE_AND_ARTIFACT_RULE_v0_2
+- Каждый важный документ должен иметь DOCUMENT_PROVENANCE_CARD.
+- Content (содержимое) ≠ source (источник).
+- Copy (копия) ≠ provenance (происхождение).
+- Reconstruction (реконструкция) ≠ physical original (физический оригинал).
+- Hash exists (хеш существует) ≠ hash verified (хеш проверен).
+- LLM output (вывод ИИ) ≠ verified copy (проверенная копия).
+- Не выдумывать hash (хеш).
+- Для ZIP нужен manifest (манифест) и checksums (контрольные суммы), где возможно.
+
+5. PROJECT_PACKAGE_RULE_SHORT
+- Каждый пакет документов должен иметь README_RU / КАРТА_ПАКЕТА.
+- Обязательно: MANIFEST, PACKAGE_PROVENANCE_CARD, STATUS_AND_LIMITATIONS_NOTE,
+  SHA256SUMS.txt если файлы физически созданы.
+- Пакет без карты = куча файлов.
+- Пакет с картой, manifest, provenance и hash = управляемый артефакт.
+
+6. PERMANENT_RULE_PREFLIGHT_GUARD_v0_1
+- Каждое новое правило до принятия проверять на contradiction (противоречие),
+  blocker (блокировку), authority confusion (смешение полномочий),
+  scope overreach (слишком широкий охват), cost-benefit (цена/польза).
+- Каноническая фраза: Правило должно защищать проект, а не парализовать его.
+
+7. PROJECT_LANGUAGE_LAYER_RULE_v0_1 / PROJECT_LANGUAGE_RULE_SHORT
+- Русский = понимание и навигация.
+- Английский = техническая стабильность и совместимость.
+- В русских человеко-читаемых документах английские технические слова должны иметь
+  русский перевод рядом или расшифровку в README_RU / карте пакета.
+- Machine files (машинные файлы) могут оставаться на английском, но рядом должен быть русский слой понимания.
+
+8. INTERFACE_TO_RECOVERABILITY_GUARD_v0_1
+- Derived from INTERFACE_THEORY_OF_PERCEPTION_IMPORT_v0_1A.
+- Core rule: Interface State (интерфейсное состояние) ≠ Recoverability State (проверенная восстановимость).
+- Формула: Видимость сохранности ≠ доказанная восстановимость.
+- Примеры: file opens (файл открывается) ≠ semantic recoverability (смысловая восстановимость);
+  object looks intact (объект выглядит целым) ≠ dynamic recoverability (динамическая восстановимость);
+  archive exists (архив есть) ≠ custody chain alive (цепочка ответственности жива);
+  hash exists (хеш есть) ≠ hash verified (хеш проверен).
+
+9. INTERFACE_THEORY_OF_PERCEPTION_IMPORT_v0_1A
+- Cross-project conceptual guard (межпроектный концептуальный защитный блок).
+- Не стандарт, не runtime (среда исполнения), не validator (проверяющий слой), не sign-card (карточка знака).
+- For E-Continuity only narrow applied slice is imported: interface picture is not proof of recoverability.
+
+10. ANCHOR_PRESERVATION_AND_RECOVERY_OBSERVATION
+- Status: observation (наблюдение), high interest (высокий интерес), illustrative case (иллюстративный кейс), not proof (не доказательство), not validation (не валидация).
+- Formula: OBJECT → ANCHOR → MEMORY_SYSTEM → INTERPRETER → RECOVERY.
+- Boundary: ANCHOR ≠ PROOF. Anchor (якорь) = recovery handle (ручка восстановления).
+- Refinement: anchor alone is insufficient; interpreter (интерпретатор) and expansion protocol (протокол разворачивания) are needed.
+
+11. CRT vs LCD / RETRO GAME DISPLAY OBSERVATION
+- Status: illustrative observation.
+- Core lesson: display compatibility (совместимость вывода) ≠ experience recoverability (восстановимость исходного опыта).
+- Candidate case: CASE-MEDIA-GAME-001 / CRT Display Dependency in Retro Games.
+
+12. v2.3 STABILIZATION PATCH
+- Compact Core Formula: Technical Recoverability + Verification Layer + Custody & Successor Governance + Migration & Sunset Governance + Capability Continuity.
+- MVW Operational Metric v0.1.
+- CASE-SPACE-001 C-3/C-4 candidate.
+- Static Integrity ≠ Dynamic Recoverability.
+- Activation Failure.
+- Dynamic Proof Testing Layer.
+- Biobank SOP Delta.

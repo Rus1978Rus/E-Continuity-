@@ -1,0 +1,8 @@
+PACKAGE_PROVENANCE_CARD
+artifact: E-Continuity_v2_3_1_Master_Archive_RU
+created: 2026-07-30
+creator_line: CHAT_PRODUCED candidate (AI-assisted), submitted to author for selection gate
+source_artifact: release/v2.3/Template_E_v2_3_Full_Master_Archive_RU @ GitHub Rus1978Rus/E-Continuity-
+source_zip_sha256: 817f94365620abf4fe5dbd6507524853046169e145bce5e18bb4e44308f156d7
+operation: rename-only (12 H1 title lines + package names); bodies untouched
+verification_status: NOT externally verified; awaiting author review

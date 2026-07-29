@@ -16,6 +16,8 @@
 - `audit/evidence/summary.json` — агрегированная статистика прохода без публикации текста корпуса.
 - `tools/audit_archives.py` — воспроизводимый конвейер анализа ZIP/DOCX/PDF/TXT/MD.
 - `release/v2.3/` — публичный canonical content package v2.3 с DOCX, PDF, Markdown, шаблонами и reviewer-пакетом.
+- `release/v2.3.1/` — rename-only release candidate (2026-07-30): MD-слой с переименованными титулами, пакетные документы, MANIFEST и SHA-256; ожидает утверждения автора.
+- `governance/` — слой управления: реестры правил и guard-ов, очередь внедрения, журнал ревью, глоссарий, AI-guard.
 
 ## Статус версий
 
@@ -25,7 +27,7 @@
 | v2.1 | базовая 13-компонентная архитектура |
 | v2.2 | dynamic proof testing, activation failure, CASE-SPACE-001 |
 | v2.3 | текущая содержательная версия; 5-блочная компактная модель, MVW v0.1 |
-| v2.3.1 | заявлена как rename-only, в переданном корпусе не завершена |
+| v2.3.1 | rename-only candidate собран (2026-07-30), CHAT_PRODUCED, ожидает author selection gate |
 
 ## Воспроизведение
 

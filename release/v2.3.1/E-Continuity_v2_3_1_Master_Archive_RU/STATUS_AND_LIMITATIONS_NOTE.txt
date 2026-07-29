@@ -1,0 +1,35 @@
+STATUS_AND_LIMITATIONS_NOTE
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Package: E-Continuity v2.3.1 Full Master Archive RU / rename-only
+Created: 2026-07-30
+
+STATUS:
+CANDIDATE_PACKAGE
+RENAME_ONLY_RELEASE
+NOT_NEW_METHODOLOGY
+NOT_GOLD_MASTER
+NOT_EXTERNAL_VERIFICATION
+
+WHAT THIS RELEASE DOES:
+- Выполняет пункт 1 PENDING_INTEGRATION_QUEUE: PROJECT_NAME_RENAME.
+- Меняет только титульные строки и имена пакетов.
+- Добавляет обязательный пакетный слой (карта, статус, provenance, manifest, sha256).
+
+WHAT THIS RELEASE DOES NOT DO:
+- Не меняет методологическое содержание v2.3.
+- Не повышает статусы: CASE-SPACE-001 остаётся C-3/C-4 candidate;
+  MVW остаётся operational metric v0.1.
+- Не включает DOCX/PDF (регенерация после утверждения rename-паттерна).
+- Не интегрирует остальные пункты очереди внедрения
+  (INTERFACE_GUARD, ANCHOR, AI_INTERPRETER_GOVERNANCE — отдельными патчами).
+
+PROVENANCE OF THIS BUILD:
+- Источник: release/v2.3/Template_E_v2_3_Full_Master_Archive_RU
+  (GitHub Rus1978Rus/E-Continuity-, canonical ZIP sha256
+  817f94365620abf4fe5dbd6507524853046169e145bce5e18bb4e44308f156d7).
+- Сборка: CHAT_PRODUCED (AI-assisted rename candidate), 2026-07-30.
+- Хеши SHA-256 рассчитаны по физически созданным файлам; не выдуманы.
+
+COMMERCIAL NOTICE:
+PRIVATE AUTHOR PROJECT / COMMERCIAL USE PROHIBITED.
+Author-owner: Руслан Малявский.
