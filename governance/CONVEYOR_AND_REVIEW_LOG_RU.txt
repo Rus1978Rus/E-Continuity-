@@ -46,3 +46,44 @@ For each external review, create:
 - verdict
 - required patches
 - integration status
+
+====================================================================
+REVIEW ROUND / ревью-раунд
+====================================================================
+REVIEW_ID: REV-2026-07-29-01
+Reviewer type: AI-assistant (CHAT_PRODUCED / NOT_INDEPENDENT_EXTERNAL)
+Date: 2026-07-29 (ось времени — git-коммиты)
+Target: E-Continuity_v2_3_1_Master_Archive_RU (первый кандидат) + governance-слой
+Method: полная построчная вычитка всех файлов; diff всех 12 переименованных
+документов против v2.3; sha256sum -c; сверка размеров MANIFEST.
+Verdict: rename-целостность и хеши подтверждены; найдена provenance-коллизия.
+
+Findings and dispositions:
+
+1. PROVENANCE_COLLISION (P0, закрыто rebuild-ом).
+   Кандидат был собран от снимка 0394e11, тогда как канонический v2.3
+   уехал вперёд (932fa35: каноническая 5-блочная формула / Appendix A,
+   Standards & Adjacent Fields Addendum). Данные были — привязки к
+   коммиту не было. Решение автора: пересборка от текущего v2.3
+   (коммит "Rebuild v2.3.1 candidate from current v2.3 (932fa35)");
+   правило THE_CANDIDATE_PINS_TO_A_COMMIT принято в реестр (п. 13).
+   Классификация по REJUVENATION_LOOP_SOP: первый T-EXT триггер,
+   петля отработала на артефактах самого проекта.
+
+2. KNOWN_ISSUE / INDEX.md (отложено, rename-only не нарушать).
+   INDEX.md наследует из v2.3 раздел Main files со ссылками на
+   01_Documents_DOCX/, 02_Documents_PDF/, 06_Reviewer_Package/
+   (в MD-пакете отсутствуют) и строку "Stabilization release".
+   Исправление — при регенерации DOCX/PDF после утверждения
+   rename-паттерна автором.
+
+3. DEFERRED / дубль References (паттерн AR-001).
+   03_Documents_MD/08_References_RU.md == 05_References/References_RU.md
+   (одинаковый SHA-256). Решение автора: сейчас не трогать; переход на
+   «один источник + сборка» — при следующей сборке пакета.
+
+4. RULE_NOTE / ось времени (принято автором).
+   Авторитетная ось времени проекта — git-коммиты; даты внутри файлов —
+   метки авторства, не provenance. Контекст: файлы первого кандидата
+   датированы 2026-07-30 по часам среды сборки при фактической
+   передаче 2026-07-29.

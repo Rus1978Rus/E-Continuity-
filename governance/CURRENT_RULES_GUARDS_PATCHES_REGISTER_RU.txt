@@ -86,3 +86,18 @@ Status: ACTIVE_WORKING_REGISTER / HUMAN_READABLE
 - Activation Failure.
 - Dynamic Proof Testing Layer.
 - Biobank SOP Delta.
+
+13. THE_CANDIDATE_PINS_TO_A_COMMIT (v0.1)
+- Каждый собранный кандидат пакета (CHAT_PRODUCED / AI-assisted) фиксирует
+  base_commit источника в PACKAGE_PROVENANCE_CARD.
+- Проверка rename/diff-целостности кандидата выполняется против тел
+  на base_commit, а не против произвольного снимка.
+- Авторитетная ось времени проекта — git-коммиты; даты внутри файлов =
+  метки авторства, не provenance.
+- Происхождение: T-EXT находка ревью REV-2026-07-29-01 (кандидат v2.3.1
+  был собран от снимка 0394e11 при источнике, уехавшем на 932fa35);
+  принято автором 2026-07-29.
+- Status: ACCEPTED / ACTIVE.
+- Примечание нумерации: заготовки реестровых записей
+  AI_INTERPRETER_GOVERNANCE_GUARD_v0_1 («13.») и REJUVENATION_LOOP_SOP_v0_1
+  («14.») при интеграции получают следующие свободные номера.
