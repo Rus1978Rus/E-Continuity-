@@ -15,4 +15,8 @@ M-008,P1,method,Не проверена переносимость между д
 M-009,P1,governance,Нормативные правила без owner/trigger/evidence,open,Rule registry с owner trigger artifact interval exceptions
 M-010,P1,review,Review не равен validation,open,Независимые reviewers и disposition log
 M-011,P2,terminology,Русско-английский терминологический дрейф,open,Controlled bilingual vocabulary
+AR-008,P1,architecture,Три конкурирующие core formula внутри Full Technical Edition,resolved,Канонической объявлена 5-блочная формула; расширенная перенесена в Appendix A с мэппингом блоков
+M-013,P1,metrics,SER без области значений: шкала LDP не задана и LDP учтён дважды,open,Задать шкалу LDP; определить диапазон SER и правило интерпретации; устранить двойной учёт LDP в SCS-цепочке
+M-014,P0,validation,Software-пилот не спроектирован как multi-issue закрытие,open,Clean-build пилот на 5-10 legacy проектах включая disconfirming cases; независимый второй аудитор; измеримые ETIG-переменные D/P/T/L; закрывает M-002 частично M-005 M-007 и даёт первый C-5
+M-015,P1,positioning,Мэппинг на смежные стандарты неполон,in_progress,References дополнены IEC 62402 SD-22 ISO 22301 ISO 31000 IAEA NKM NDSA Levels DPC RAM CoreTrustSeal; осталось обновить ответ в Objection Kit
 
