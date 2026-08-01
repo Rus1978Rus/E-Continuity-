@@ -1,0 +1,53 @@
+PENDING_INTEGRATION_QUEUE_RU
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Created: 2026-06-05T19:26:06+00:00
+Status: CURRENT_PENDING_QUEUE
+
+These items were accepted for development after Template E v2.3 / before future E-Continuity rename release.
+They are not yet fully integrated into a renamed master release.
+
+1. PROJECT_NAME_RENAME
+- Target: E-Continuity v2.3.1 rename-only release.
+- Former name: Template E.
+- Status: pending full rename release.
+
+2. PROJECT_PACKAGE_RULE_SHORT
+- Add to future README_RU / package maps.
+- Required contents: README_RU, MANIFEST, PACKAGE_PROVENANCE_CARD, DOCUMENT_PROVENANCE_CARD for important files, SHA256SUMS, STATUS_AND_LIMITATIONS_NOTE.
+
+3. INTERFACE_TO_RECOVERABILITY_GUARD_v0_1
+- Add to: Core Principles, Failure Taxonomy, Glossary, SOP Universal Checklist, Boundaries/Overclaim Protection.
+- Add failure mode: INTERFACE_CONFUSION_FAILURE (отказ из-за спутывания интерфейсной картины с восстановимостью).
+- Add terms: Interface State (интерфейсное состояние), Recoverability State (состояние восстановимости), Interface Confusion Failure.
+
+4. ANCHOR_PRESERVATION_AND_RECOVERY_OBSERVATION
+- Add to Illustrative Observations / appendix.
+- Add patch: recovery needs ANCHOR + INTERPRETER + EXPANSION_PROTOCOL.
+- Candidate terms: Anchor (якорь), Recovery Handle (ручка восстановления), Interpreter Continuity (преемственность интерпретатора), Anchor Expansion Protocol (протокол разворачивания якоря).
+
+5. CRT vs LCD RETRO GAME OBSERVATION
+- Add as candidate illustrative case:
+  CASE-MEDIA-GAME-001 / CRT Display Dependency in Retro Games.
+- Core lesson: game runs (игра запускается) ≠ original perceptual mission recovered (исходный опыт восстановлен).
+- Do not overstate as proof; keep as illustrative media/interface dependency case.
+
+6. MANAGEMENT_BRIEF_RENAME
+- Current document: E-Continuity Practical Value NonSpecialist.
+- Better title: E-Continuity / Управленческое введение: назначение, прикладная ценность и области применения.
+- Avoid phrase "non-specialist" (не специалист), because it may sound diminishing.
+
+7. README_CURRENT
+- Current README package exists and should be retained.
+- Future release should include README_RU / КАРТА_ПАКЕТА under PROJECT_PACKAGE_RULE_SHORT.
+
+8. OLD_FOLDER_RULE
+- Keep "старое" / OLD_DO_NOT_EDIT as frozen fallback.
+- Do not edit inside old folder.
+
+9. C-4 SOURCE HARDENING
+- CASE-SPACE-001 remains C-3/C-4 candidate.
+- Need primary/technical source verification before C-4 claim.
+
+10. EXTERNAL_REVIEW_STAGE
+- Next serious stage after rename release:
+  external review + C-4/C-5 source hardening + one pilot SOP.

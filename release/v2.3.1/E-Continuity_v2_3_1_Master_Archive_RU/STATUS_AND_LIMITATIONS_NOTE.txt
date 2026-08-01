@@ -1,0 +1,43 @@
+STATUS_AND_LIMITATIONS_NOTE
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Package: E-Continuity v2.3.1 Full Master Archive RU / rename-only
+Created: 2026-07-30
+
+STATUS:
+CANDIDATE_PACKAGE
+RENAME_ONLY_RELEASE
+NOT_NEW_METHODOLOGY
+NOT_GOLD_MASTER
+NOT_EXTERNAL_VERIFICATION
+
+WHAT THIS RELEASE DOES:
+- Выполняет пункт 1 PENDING_INTEGRATION_QUEUE: PROJECT_NAME_RENAME.
+- Меняет только титульные строки и имена пакетов.
+- Добавляет обязательный пакетный слой (карта, статус, provenance, manifest, sha256).
+
+WHAT THIS RELEASE DOES NOT DO:
+- Не меняет методологическое содержание v2.3.
+- Не повышает статусы: CASE-SPACE-001 остаётся C-3/C-4 candidate;
+  MVW остаётся operational metric v0.1.
+- Не включает DOCX/PDF (регенерация после утверждения rename-паттерна).
+- Не интегрирует остальные пункты очереди внедрения
+  (INTERFACE_GUARD, ANCHOR, AI_INTERPRETER_GOVERNANCE — отдельными патчами).
+
+PROVENANCE OF THIS BUILD:
+- Источник: release/v2.3/Template_E_v2_3_Full_Master_Archive_RU
+  @ base_commit 932fa35170ab03fe3d1b29b1d4b0b53e1c9db08d
+  (текущее каноническое v2.3 = исходный canonical ZIP sha256
+  817f94365620abf4fe5dbd6507524853046169e145bce5e18bb4e44308f156d7
+  плюс редакционный коммит 932fa35: каноническая 5-блочная
+  формула / Appendix A и Standards & Adjacent Fields Addendum).
+- Правило: THE_CANDIDATE_PINS_TO_A_COMMIT — кандидат пришпилен к коммиту;
+  авторитетная ось времени проекта — git-коммиты, даты в файлах —
+  метки авторства.
+- Первый кандидат (от снимка 0394e11) заменён целиком: rebuild
+  2026-07-29, см. git history.
+- Сборка: CHAT_PRODUCED (AI-assisted rename candidate).
+- Хеши SHA-256 рассчитаны по физически созданным файлам; не выдуманы.
+
+COMMERCIAL NOTICE:
+PRIVATE AUTHOR PROJECT / COMMERCIAL USE PROHIBITED.
+Author-owner: Руслан Малявский.

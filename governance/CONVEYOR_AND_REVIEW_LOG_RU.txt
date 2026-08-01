@@ -1,0 +1,132 @@
+CONVEYOR_AND_REVIEW_LOG_RU
+Project: E-Continuity / Фреймворк управляемой восстановимости
+Created: 2026-06-05T19:26:06+00:00
+Status: COLLECTION_LOG / NOT_COMPLETE_EXTERNAL_AUDIT
+
+Purpose:
+Собрать известные материалы review (рецензии), conveyor (конвейерных прогонов),
+feedback (обратной связи) и reviewer packages (пакетов для рецензента).
+
+Known physical review/reviewer materials found:
+- 07_appendix_external_reviews_v1.0.pdf
+- 07_appendix_external_reviews_v1.0(1).pdf
+- Template_E_Reviewer_Edition variants
+- Template_E_v2_1_Reviewer_Package_RU
+- Template_E_v2_2_Reviewer_Package_RU
+- Template_E_v2_3_Reviewer_Package_RU
+- Template_E_v2_3_Reviewer_Package_RU_ALL PDF
+- Reviewer package PDF-only archives where found
+
+Known dialogue-provided review/feedback:
+- DeepSeek-style review of the package "Свод правил пережидания".
+  Status: CHAT_PROVIDED_TEXT / NOT_PHYSICAL_EXTERNAL_FILE_VERIFIED.
+  Main points: five conditions useful, document 06 has standalone value,
+  proof testing is strong, need layers of interpretability, negative set,
+  ETIG, partial redundancy, separate operational biobank SOP.
+
+- Later reviewer-style evaluation of Template E v2.3/v2.2:
+  Status: CHAT_PROVIDED_TEXT / NOT_PHYSICAL_EXTERNAL_FILE_VERIFIED.
+  Main points: v2.2 strengthened by Dynamic Proof Testing and CASE-SPACE-001;
+  weak areas: metrics not operational enough, core formula overloaded,
+  CASE-SPACE needs primary source, Biobank SOP generic.
+  Resulting patch: v2.3 Stabilization Patch.
+
+Important limitation:
+This log does not claim every review came from an independently verified external reviewer file.
+Where source is not a physical file, it must be treated as CHAT_TRANSCRIPT_EXTRACT / user-provided text.
+
+Recommended future action:
+For each external review, create:
+- REVIEW_ID
+- reviewer identity/type
+- date
+- source file
+- hash
+- target document version
+- verdict
+- required patches
+- integration status
+
+====================================================================
+REVIEW ROUND / ревью-раунд
+====================================================================
+REVIEW_ID: REV-2026-07-29-01
+Reviewer type: AI-assistant (CHAT_PRODUCED / NOT_INDEPENDENT_EXTERNAL)
+Date: 2026-07-29 (ось времени — git-коммиты)
+Target: E-Continuity_v2_3_1_Master_Archive_RU (первый кандидат) + governance-слой
+Method: полная построчная вычитка всех файлов; diff всех 12 переименованных
+документов против v2.3; sha256sum -c; сверка размеров MANIFEST.
+Verdict: rename-целостность и хеши подтверждены; найдена provenance-коллизия.
+
+Findings and dispositions:
+
+1. PROVENANCE_COLLISION (P0, закрыто rebuild-ом).
+   Кандидат был собран от снимка 0394e11, тогда как канонический v2.3
+   уехал вперёд (932fa35: каноническая 5-блочная формула / Appendix A,
+   Standards & Adjacent Fields Addendum). Данные были — привязки к
+   коммиту не было. Решение автора: пересборка от текущего v2.3
+   (коммит "Rebuild v2.3.1 candidate from current v2.3 (932fa35)");
+   правило THE_CANDIDATE_PINS_TO_A_COMMIT принято в реестр (п. 13).
+   Классификация по REJUVENATION_LOOP_SOP: первый T-EXT триггер,
+   петля отработала на артефактах самого проекта.
+
+2. KNOWN_ISSUE / INDEX.md (отложено, rename-only не нарушать).
+   INDEX.md наследует из v2.3 раздел Main files со ссылками на
+   01_Documents_DOCX/, 02_Documents_PDF/, 06_Reviewer_Package/
+   (в MD-пакете отсутствуют) и строку "Stabilization release".
+   Исправление — при регенерации DOCX/PDF после утверждения
+   rename-паттерна автором.
+
+3. DEFERRED / дубль References (паттерн AR-001).
+   03_Documents_MD/08_References_RU.md == 05_References/References_RU.md
+   (одинаковый SHA-256). Решение автора: сейчас не трогать; переход на
+   «один источник + сборка» — при следующей сборке пакета.
+
+4. RULE_NOTE / ось времени (принято автором).
+   Авторитетная ось времени проекта — git-коммиты; даты внутри файлов —
+   метки авторства, не provenance. Контекст: файлы первого кандидата
+   датированы 2026-07-30 по часам среды сборки при фактической
+   передаче 2026-07-29.
+
+====================================================================
+REVIEW ROUND / ревью-раунд
+====================================================================
+REVIEW_ID: REV-2026-07-29-02
+Reviewer type: AI-assistant (CHAT_PRODUCED / NOT_INDEPENDENT_EXTERNAL)
+Date: 2026-07-29 (ось времени — git-коммиты)
+Target: FORMULA_CANDIDATES_E_Continuity_2026_07_30_v0_3_RU.md
+  (кандидаты F-2026-09…12, класс E2)
+File sha256: 7128596771426e892b49118f363bf9903fc97b89f127fe18b8b9f7b2f7bb0dee
+Disposition: размещён verbatim в governance/; в core, реестр правил и
+PENDING-очередь НЕ интегрирован (согласно разделу B самого файла);
+статусы не повышались.
+
+Findings:
+
+1. DANGLING_BASE (решение автора требуется).
+   Файл объявляет себя дополнением к
+   FORMULA_CANDIDATES_E_Continuity_2026_07_30_v0_2_RU.md (F-2026-01…08),
+   но v0.2 в репозитории отсутствует. Ссылки на F-2026-05 (analogy
+   guard) и «holdout-дисциплину v0.2» висят без базы — паттерн
+   anchor-без-протокола-разворачивания. Варианты: догрузить v0.2 тем же
+   порядком либо зафиксировать v0.2 как локальный авторский слой.
+
+2. EVIDENCE_NOTE (соблюдено, к сведению).
+   SHA-256 двух .py-симуляций заявлены в разделе C, сами артефакты в
+   репозиторий не переданы — проверка хешей извне невозможна. Файл сам
+   честно отмечает: «в репозитории коммита нет». Hash exists ≠ hash
+   verified — дисциплина соблюдена; проверка станет возможной при
+   передаче артефактов.
+
+3. METHOD_NOTE (для будущей формализации F-2026-09/10).
+   Evidence всех четырёх кандидатов — две chat-produced симуляции
+   (seed 42), конструктивно реализующие проверяемое правило; это
+   demonstration-of-construction, не независимый тест. Фальсификаторы
+   заданы корректно, но этими же симуляциями нереализуемы. Уровень E2
+   выставлен честно; при формализации в PROPOSED_RULE потребуется
+   внешний к симуляции пример (по духу C-4).
+
+4. COSMETIC.
+   H1 «PRINCIPLE CANDIDATES v0.3» расходится с именем файла
+   FORMULA_CANDIDATES_…; задним числом не правится (канон файла) —
+   кандидат на выравнивание терминов в v0.4.

@@ -1,4 +1,5 @@
-# Template E v2.3
+# E-Continuity v2.3.1
+_E-Continuity v2.3.1 / rename-only release; историческое имя (former name): Template E; методологическое содержание не изменено._
 
 _References RU / рабочий список источников_
 
